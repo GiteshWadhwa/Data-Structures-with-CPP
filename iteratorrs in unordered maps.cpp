@@ -17,7 +17,10 @@ while(it!=ourmap.end()){
     cout<<"key: "<<it->first<<"Value: "<<it->second<<endl;
     it++;
 }
-
+//find
+unordered_map<string,int>::iterator it2=ourmap.find("abc");
+ourmap.erase(it2);
+ourmap.erase(it2,it2+4);//start ot ending iterator will be deleted
 vector<int> v;
 v.push_back(1);
 v.push_back(2);
