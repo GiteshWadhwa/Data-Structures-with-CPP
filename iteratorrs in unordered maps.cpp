@@ -5,7 +5,7 @@
 using namespace std;
 int main(){
 
-unordered_map<string,int> outmap;
+unordered_map<string,int> ourmap;
 ourmap["abc"]=1;
 ourmap["abc1"]=2;
 ourmap["abc2"]=3;
