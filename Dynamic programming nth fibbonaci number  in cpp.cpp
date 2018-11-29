@@ -1,6 +1,28 @@
 #include<iostream>
 using namespace std;
 
+//dynamic programmning (bottom approach)
+int fibbo(int n){
+int *ans=new int[n+1];
+ans[0]=0;
+ans[1]=1;
+for(int i=2;i<=n;i++)
+{
+    ans[i]=ans[i-1]+ans[i-2];
+}
+return ans[n];
+}
+
+//Brust fruit approach
+/*
+int fibbo(int n){
+  if(n<=1){
+    return n;
+  }
+  int a=fibbo(n-1);
+  int b=fibbo(n-2);
+  return a+b;
+}*/
 //using memoization   top down approach........!!!! complexicity(o(n))
 int fibbona_helper(int n,int *arr)
 {
