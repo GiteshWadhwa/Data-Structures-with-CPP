@@ -43,5 +43,5 @@ for(int i=0;i<n;i++){
 }
 print(edges,n,0,visited);
 
-//Delete all the memory.....
+//Deallocate the dynamic array....!!
 }
