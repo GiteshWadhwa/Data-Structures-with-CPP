@@ -35,6 +35,7 @@ int main()
         edges[f][s]=1;
         edges[s][f]=1;
 
+<<<<<<< HEAD
     }
     bool* visited=new bool[n];
     for(int i=0;i<n;i++)
@@ -47,4 +48,7 @@ int main()
         delete [] edges[i];
     }
     delete [] edges;
+=======
+//Deallocate the dynamic array....!!
+>>>>>>> c0426ea9cf134b9ddacfd0be414ebcaf0df04400
 }
